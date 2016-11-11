@@ -15,7 +15,6 @@ var spaceshipPartsStub = spaceshipPartsStub1;
 
 
 var querystring = require('querystring')
-var proxyquire = require('proxyquire');
 var assert =  require('assert');
 var server = proxyquire('../lib/server/routes/parts', {'../modules/spaceship-parts': spaceshipPartsStub});
 var http = require('http');
